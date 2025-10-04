@@ -1,11 +1,11 @@
 import React from "react";
+import Title from "./Title";
 
 const About = () => {
   return (
     <section className="about" id="about">
-      <h2 className="title">
-        <span>About me</span>
-      </h2>
+      <Title title="About me" />
+
       <div className="container flex about-content">
         <div className="flex-center myImg">
           <img

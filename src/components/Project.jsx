@@ -1,9 +1,11 @@
 import React from "react";
+import Title from "./Title";
 
 const Project = () => {
   return (
     <section className="project" id="projects">
-      <div className="heading">My Projects</div>
+      <Title title="My Projects" />
+
       <div className="project-container">
         <div className="project-item">
           <div className="project-image">
