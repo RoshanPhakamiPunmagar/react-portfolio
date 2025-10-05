@@ -35,16 +35,18 @@ export const Project = () => {
   return (
     <section className="project" id="projects">
       <Title title="My Projects" />
-      {projects.map((proj, index) => (
-        <Card
-          key={index}
-          image={proj.image}
-          github={proj.github}
-          title={proj.title}
-          description={proj.description}
-          url={proj.url}
-        />
-      ))}
+      <div className="project-container">
+        {projects.map((proj, index) => (
+          <Card
+            key={index}
+            image={proj.image}
+            github={proj.github}
+            title={proj.title}
+            description={proj.description}
+            url={proj.url}
+          />
+        ))}
+      </div>
     </section>
   );
 };
