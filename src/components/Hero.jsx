@@ -1,4 +1,5 @@
 import React from "react";
+import roshan from "../assets/roshan.jpeg";
 
 const Hero = () => {
   return (
@@ -20,7 +21,7 @@ const Hero = () => {
             </div>
           </div>
           <div className="right flex">
-            <img src="src/assets/roshan.jpeg" alt="Roshan's Profile" />
+            <img src={roshan} alt="Roshan's Profile" />
           </div>
         </div>
       </section>

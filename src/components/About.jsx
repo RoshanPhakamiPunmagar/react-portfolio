@@ -1,5 +1,6 @@
 import React from "react";
 import Title from "./Title";
+import roshan from "../assets/roshan.jpeg";
 
 const About = () => {
   return (
@@ -8,11 +9,7 @@ const About = () => {
 
       <div className="container flex about-content">
         <div className="flex-center myImg">
-          <img
-            src="src/assets/roshan.jpeg"
-            alt="Roshan's picture"
-            width="100%"
-          />
+          <img src={roshan} alt="Roshan's picture" width="100%" />
         </div>
         <div className="my-bio container">
           <h2>Roshan Magar</h2>
