@@ -30,12 +30,6 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
-        {/* <Hero />
-        <Skill />
-        <Project />
-        <About />
-        <Contact />
-        <Footer /> */}
       </div>
     </Router>
   );

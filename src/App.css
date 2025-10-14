@@ -61,6 +61,9 @@ a {
 .wrapper {
   background-color: rgba(146, 146, 224, 0.853);
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 [for="darkMode"] {
   position: fixed;
