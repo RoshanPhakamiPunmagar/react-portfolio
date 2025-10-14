@@ -361,6 +361,13 @@ footer .bottom {
   }
 }
 
+/* Hamburger */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
 /* Mobile */
 @media screen and (max-width: 600px) {
   .hero {
@@ -418,5 +425,28 @@ footer .bottom {
   }
   footer ul li {
     margin-bottom: 0.8rem;
+  }
+  .hamburger {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background: var(--color-orange);
+    padding: 1rem;
+    border-radius: 10px;
+  }
+
+  .menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .menu.show {
+    display: block;
   }
 }

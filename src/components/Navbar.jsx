@@ -1,33 +1,52 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  const [open, setOpen] = useState(false);
+
   return (
     <header>
-      <div className="header container flex">
+      <div className="container flex header">
         <div className="logo">
           <div>Roshan</div>
           <div className="line">Software Developer</div>
         </div>
-        <div className="menu">
+
+        {/* Hamburger Button */}
+        <div className="hamburger" onClick={() => setOpen(!open)}>
+          ☰
+        </div>
+
+        {/* Menu */}
+        <nav className={`menu ${open ? "show" : ""}`}>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/" onClick={() => setOpen(false)}>
+                Home
+              </Link>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <Link to="/about" onClick={() => setOpen(false)}>
+                About
+              </Link>
             </li>
             <li>
-              <Link to="/skills">Skills</Link>
+              <Link to="/skills" onClick={() => setOpen(false)}>
+                Skills
+              </Link>
             </li>
             <li>
-              <Link to="/projects">Projects</Link>
+              <Link to="/projects" onClick={() => setOpen(false)}>
+                Projects
+              </Link>
             </li>
             <li>
-              <Link to="/contact">Contact</Link>
+              <Link to="/contact" onClick={() => setOpen(false)}>
+                Contact
+              </Link>
             </li>
           </ul>
-        </div>
+        </nav>
       </div>
     </header>
   );
