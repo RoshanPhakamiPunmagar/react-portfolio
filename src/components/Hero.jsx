@@ -13,7 +13,7 @@ const Hero = () => {
             <div className="tag">Soft. Developer</div>
             <p>I love coding.</p>
             <div>
-              <a href="/RoshanPunmagar.docx">
+              <a href="/RoshanPunmagar.pdf">
                 <button>
                   Download CV <i className="fa-solid fa-download"></i>
                 </button>
